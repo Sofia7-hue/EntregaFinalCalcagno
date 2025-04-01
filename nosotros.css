@@ -1,0 +1,98 @@
+/* Estilos para la sección "Nosotros" */
+#nosotros {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#nosotros h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+#nosotros p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mision,
+.vision {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: justify;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Estilo para los miembros del equipo */
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.team-member .role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #007bff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #nosotros h1 {
+        font-size: 2.5rem;
+    }
+
+    .team {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, los miembros se alinean en columna */
+    }
+
+    .team-member {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
